@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <main class="container">
+        <div class="heading">
+            <h1>Temprature Convertor</h1>
+        </div>
+        <div class="content">
+            <!-- --------------------------InputSection------------------- -->
+            <section class="inputSection section">
+                <h3>From:</h3>
+                <input type="number" class="input displayBox" title="Your input">
+                <select class="unit inputUnit" title="Choose input Unit" aria-labelledby="unit-label">
+                    <option value="celsius">Celsius [°C]</option>
+                    <option value="fahrenheit">Fahrenheit [°F]</option>
+                    <option value="kelvin">Kelvin [K]</option>                    
+                </select>
+            </section>
+
+            <!-- --------------------OutputSection------------------------------- -->
+            <section class="outputSection section">
+                <h3>To:</h3>
+                <input type="number" class="output displayBox" title="Your input" readonly>
+                <select class="unit outputUnit" title="Choose output Unit">
+                    <option value="fahrenheit">Fahrenheit [°F]</option>
+                    <option value="celsius">Celsius [°C]</option>
+                    <option value="kelvin">Kelvin [K]</option>
+                </select>
+            </section>
+        </div>
+        <div class="error">
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
